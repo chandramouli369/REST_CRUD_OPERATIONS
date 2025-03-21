@@ -1,38 +1,132 @@
-.App {
+/* App.css */
+body {
+  background-color: #f4f6f9;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.button{
+  border-radius: 10px;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+  border: none;
+}
+/* Center the card body */
+.card-body {
+  display: flex;
+  flex-direction: column; /* Align content in a column */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Align text */
+}
+
+.table {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+td {
+  vertical-align: middle;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Button Colors */
+.btn-primary {
+  background-color: #009dff;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a781;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #07a4ff;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+/* Form Styling */
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background: #ef8700;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-sm {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+}
+/* Center align actions in table */
+.actions {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically */
+  gap: 8px; /* Space between buttons */
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Ensure buttons are the same height */
+.btn-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 12px;
+  font-size: 14px;
+  min-width: 80px; /* Ensures equal width for Edit and Delete */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-sm {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
 }
+
